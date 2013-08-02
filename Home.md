@@ -82,7 +82,11 @@ Improvements have also been made to the re-generate previews operation, includin
 
 It is now also possible for global and tenant admins to see the group members of all groups
 
+
+
 ***
+
+
 
 ### OAE Phoenix 1.0 (27 June 2013)
 
