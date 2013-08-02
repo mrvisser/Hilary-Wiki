@@ -1,6 +1,6 @@
 ### OAE Phoenix 1.1 (01 August 2013)
 
-The Apereo Open Academic Environment (OAE) project team is pleased to announce the first minor release of the Apereo Open Academic Environment Phoenix release; OAE Phoenix 1.1. 
+The Apereo Open Academic Environment (OAE) project team is pleased to announce the first minor release of the OAE Phoenix release; OAE Phoenix 1.1. 
 
 OAE Phoenix 1.1 brings a number of new features, like LDAP authentication and new UI translations, a number of end-user improvements and improves OAE's ease of deployment and development. However, OAE Phoenix 1.1 is mostly a technical release, with lots of work going on in the background around performance testing and automated UI testing.
 
