@@ -6,7 +6,7 @@
 
 #### OAE Phoenix 1.0 (27 June 2013)
 
-**Administration panels**
+**Administration UI**
 - Global administration panel allowing for tenant creation, management and configuration
 - Tenant administation panel allowing for tenant maintenance and configuration
 - Tenant skinning panel
