@@ -12,7 +12,7 @@ The first OAE production environment has also been set up and launched, and curr
 
 This production environment has been updated to run the OAE Phoenix 1.1 release.
 
-##### Try it out
+#### Try it out
 
 The source code has been tagged with version number 0.2.1 and can be downloaded from the following repositories:
 
@@ -23,7 +23,7 @@ Documentation on how to install the system can be found at https://github.com/oa
 
 The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
 
-##### Changelog
+#### Changelog
 
 **LDAP authentication**
 
@@ -90,7 +90,7 @@ The Apereo Open Academic Environment (OAE) project team is pleased and excited t
 
 Apereo OAE is designed as a multi-tenant platform that can be run at large scale, allowing for a single installation to support multiple institutions at the same time. OAE Phoenix 1.0 is a first and important step and attempts to provide a basic, but solid foundation that can be used as the basis for many more collaborative scenarios.
 
-##### Try it out
+#### Try it out
 
 The source code has been tagged with version number 0.2.0 and can be downloaded from the following repositories:
 
@@ -101,7 +101,7 @@ Documentation on how to install the system can be found at https://github.com/oa
 
 The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
 
-##### Main features
+#### Main features
 
 **Administration UI**
 - Global administration panel allowing for tenant creation, management and configuration
