@@ -6,6 +6,23 @@
 
 ### OAE Phoenix 1.0 (27 June 2013)
 
+The Apereo Open Academic Environment (OAE) project team is pleased and excited to announce the first release of the Apereo Open Academic Environment; OAE Phoenix 1.0. This release consists of the first production ready release of Apereo OAE and focusses on providing support for various forms of academic collaboration.
+
+Apereo OAE is designed as a multi-tenant platform that can be run at large scale, allowing for a single installation to support multiple institutions at the same time. OAE Phoenix 1.0 is a first and important step and attempts to provide a basic, but solid foundation that can be used as the basis for many more collaborative scenarios.
+
+##### Try it out
+
+The source code has been tagged with version number 0.2.0 can be downloaded from the following repositories:
+ 
+Back-end: https://github.com/oaeproject/Hilary/tree/0.2.0
+Front-end: https://github.com/oaeproject/3akai-ux/tree/0.2.0
+ 
+Documentation on how to install the system can be found at https://github.com/oaeproject/Hilary/blob/0.2.0/README.md.
+ 
+The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
+
+##### Main features
+
 **Administration UI**
 - Global administration panel allowing for tenant creation, management and configuration
 - Tenant administation panel allowing for tenant maintenance and configuration
