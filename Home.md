@@ -13,12 +13,12 @@ Apereo OAE is designed as a multi-tenant platform that can be run at large scale
 ##### Try it out
 
 The source code has been tagged with version number 0.2.0 can be downloaded from the following repositories:
- 
+
 Back-end: https://github.com/oaeproject/Hilary/tree/0.2.0
 Front-end: https://github.com/oaeproject/3akai-ux/tree/0.2.0
- 
+
 Documentation on how to install the system can be found at https://github.com/oaeproject/Hilary/blob/0.2.0/README.md.
- 
+
 The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
 
 ##### Main features
