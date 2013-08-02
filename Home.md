@@ -1,10 +1,10 @@
-#### OAE Phoenix 1.1 (01 August 2013)
+### OAE Phoenix 1.1 (01 August 2013)
 
 
 
 ***
 
-#### OAE Phoenix 1.0 (27 June 2013)
+### OAE Phoenix 1.0 (27 June 2013)
 
 **Administration UI**
 - Global administration panel allowing for tenant creation, management and configuration
