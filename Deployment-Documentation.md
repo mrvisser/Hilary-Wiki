@@ -4,7 +4,9 @@ For more questions and information in other areas of setting up an Apereo OAE pr
 
 ## Etherpad Storage
 
-Etherpad storage should be configured from the default "dirty.db". The OAE team has contributed a Cassandra storage driver that is now shipped with Etherpad. For detail on how to configure etherpad to point to your OAE cassandra database, you can refer to our [puppet etherpad configuration template](https://github.com/oaeproject/puppet-hilary/blob/master/modules/etherpad/templates/etherpad.settings.json.erb#L31)
+Etherpad storage should be configured **away from** the default "dirty.db" configuration. That is only suitable for development instances.
+
+The OAE team has contributed a Cassandra storage driver that is now shipped with Etherpad. For detail on how to configure etherpad to point to your OAE cassandra database, you can refer to our [puppet etherpad configuration template](https://github.com/oaeproject/puppet-hilary/blob/master/modules/etherpad/templates/etherpad.settings.json.erb#L31)
 
 ## Etherpad Clustering
 
