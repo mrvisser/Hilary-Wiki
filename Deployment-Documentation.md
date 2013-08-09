@@ -1,8 +1,10 @@
-# Deployment Documentation
-
 At the moment these are more aggregated notes for production Apereo OAE deployments.
 
 For more questions and information in other areas of setting up an Apereo OAE production clusters, please get in touch with the [OAE Developers list](http://collab.sakaiproject.org/mailman/listinfo/oae-dev) or send questions to [oae-dev@collab.sakaiproject.org](mailto:oae-dev@collab.sakaiproject.org).
+
+## Etherpad Storage
+
+Etherpad storage should be configured from the default "dirty.db". The OAE team has contributed a Cassandra storage driver that is now shipped with Etherpad. For detail on how to configure etherpad to point to your OAE cassandra database, you can refer to our [puppet etherpad configuration template](https://github.com/oaeproject/puppet-hilary/blob/master/modules/etherpad/templates/etherpad.settings.json.erb#L31)
 
 ## Etherpad Clustering
 
