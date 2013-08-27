@@ -1,3 +1,63 @@
+### OAE Phoenix 1.2 (23 August 2013)
+
+The Apereo Open Academic Environment (OAE) project team is pleased to announce the second minor release of the OAE Phoenix release; OAE Phoenix 1.2. 
+
+OAE Phoenix 1.2 upgrades the Hilary back-end to Node.js 0.10 and brings some user-facing improvements like Administration UI improvements, CAS authentication mappings and a number of bug fixes. In the background, ongoing work on performance testing, automated UI testing and automated cluster deployment has been going on, which is now nearing completion.
+
+#### Try it out
+
+The source code has been tagged with version number 0.2.2 and can be downloaded from the following repositories:
+
+Back-end: https://github.com/oaeproject/Hilary/tree/0.2.2  
+Front-end: https://github.com/oaeproject/3akai-ux/tree/0.2.2  
+
+Documentation on how to install the system can be found at https://github.com/oaeproject/Hilary/blob/0.2.2/README.md.
+
+The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
+
+#### Changelog
+
+** CAS Authentication mappings **
+
+It is now possible to map the OAE display name, e-mail, locale and timezone against CAS attributes released by a CAS authentication server. All of this can be configured on the fly through the Administration UI.
+
+** Administration UI improvements **
+
+- A tenant's host name can now be modified on the fly through the administration UI.
+- A number of browser caching and back-end caching consistency bugs in the Tenants API have been fixed.
+- Added appropriate validation when creating new tenants
+- Refactored the Tenants API and increased test coverage
+
+** Mime type recognition **
+
+Improved mime type recognition has been put in place for uploaded files, ensuring that files uploaded from any browser will be appropriately recognized.
+
+** Accessibility improvements **
+
+All modal dialogs that have a type ahead component as the first focusable element will now receive appropriate focus when opening the modal. Next to that, a number of text alternatives for non-textual content have been added.
+
+** API improvements **
+
+All feeds that support paging now return a `nextToken` parameter that can be used to request the next page of results. This takes away the need to know which field to use for paging and should make it easier to use the REST APIs. A number of improvements have been made to the OAE UI APIs as well.
+
+** UI translations **
+
+The Spanish OAE translation is now back at 100% completeness, thanks to Samuel Gutiérrez Jiménez-Peña.
+
+** Node 0.10 upgrade **
+
+The Hilary back-end, as well as the activity and preview processor nodes, have been upgraded from Node.js 0.8 to 0.10 after extensive performance testing. 
+
+** Production improvements **
+
+A bug that was preventing Etherpad documents from being published when using multiple Etherpad servers has been resolved.
+
+
+
+***
+
+
+
 ### OAE Phoenix 1.1 (01 August 2013)
 
 The Apereo Open Academic Environment (OAE) project team is pleased to announce the first minor release of the OAE Phoenix release; OAE Phoenix 1.1. 
