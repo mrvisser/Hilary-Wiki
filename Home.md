@@ -17,38 +17,38 @@ The repository containing all deployment scripts can be found at https://github.
 
 #### Changelog
 
-** CAS Authentication mappings **
+**CAS Authentication mappings**
 
 It is now possible to map the OAE display name, e-mail, locale and timezone against CAS attributes released by a CAS authentication server. All of this can be configured on the fly through the Administration UI.
 
-** Administration UI improvements **
+**Administration UI improvements**
 
 - A tenant's host name can now be modified on the fly through the administration UI.
 - A number of browser caching and back-end caching consistency bugs in the Tenants API have been fixed.
 - Added appropriate validation when creating new tenants
 - Refactored the Tenants API and increased test coverage
 
-** Mime type recognition **
+**Mime type recognition**
 
 Improved mime type recognition has been put in place for uploaded files, ensuring that files uploaded from any browser will be appropriately recognized.
 
-** Accessibility improvements **
+**Accessibility improvements**
 
 All modal dialogs that have a type ahead component as the first focusable element will now receive appropriate focus when opening the modal. Next to that, a number of text alternatives for non-textual content have been added.
 
-** API improvements **
+**API improvements**
 
 All feeds that support paging now return a `nextToken` parameter that can be used to request the next page of results. This takes away the need to know which field to use for paging and should make it easier to use the REST APIs. A number of improvements have been made to the OAE UI APIs as well.
 
-** UI translations **
+**UI translations**
 
 The Spanish OAE translation is now back at 100% completeness, thanks to Samuel Gutiérrez Jiménez-Peña.
 
-** Node 0.10 upgrade **
+**Node 0.10 upgrade**
 
 The Hilary back-end, as well as the activity and preview processor nodes, have been upgraded from Node.js 0.8 to 0.10 after extensive performance testing. 
 
-** Production improvements **
+**Production improvements**
 
 A bug that was preventing Etherpad documents from being published when using multiple Etherpad servers has been resolved.
 
