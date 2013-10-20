@@ -3,4 +3,4 @@
   * [Deployment](https://github.com/oaeproject/Hilary/wiki/Deployment-Documentation) (draft)
   * Design
 * Proposals
-  * Extending activities for "Live Streams" to support Push Notifications requirements
+  * [Live Activity Streams](https://github.com/oaeproject/Hilary/wiki/Live-Activity-Streams) (Push Notifications)
