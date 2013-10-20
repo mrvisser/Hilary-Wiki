@@ -1,4 +1,4 @@
 * [Release Announcements](https://github.com/oaeproject/Hilary/wiki/Release-Announcements)
 * Documentation
-  * Deployment
+  * [Deployment](https://github.com/oaeproject/Hilary/wiki/Deployment-Documentation) (draft)
   * Design
