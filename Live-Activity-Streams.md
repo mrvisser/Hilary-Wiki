@@ -51,7 +51,7 @@ ActivityAPI.registerActivityType(ContentConstants.activity.ACTIVITY_CONTENT_CREA
 });
 ```
 
-In this configuration, a new top-level configuration element "streams" exists to hold the names of streams as keys. Then you can define the router of the stream, and other aspects such as email, or perhaps stream-specific configuration properties in the future.
+In this configuration, a new top-level configuration element "streams" exists to hold the names of streams as keys. Then you can define the router of the stream and other aspects such as email, or in the future stream-specific `groupBy` rules or other custom stream properties.
 
 This then allows us to introduce new streams. Using the use-case of "subscribe to content comment push notifications" as an example, here is how this could be configured:
 
@@ -109,6 +109,10 @@ ActivityAPI.registerActivityType(ContentConstants.activity.ACTIVITY_CONTENT_COMM
 ```
 
 Since we simply don't have an `activity` or `notification` router, we are no longer concerned with this being delivered to activity streams.
+
+## Subscribing to a "Live Stream"
+
+Once the pluggable streams are in place, activity could provide a REST endpoint such as `/api/activity/<streamName>/live` which supports the WebSocket connection to receive all activity that is delivered to the stream.
 
 Implementation gotchas:
 
