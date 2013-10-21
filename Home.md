@@ -9,4 +9,4 @@
         * Content API
         * Tenants API
 * Proposals
-        * [Live Activity Streams](https://github.com/oaeproject/Hilary/wiki/Live-Activity-Streams) (Push Notifications)
+    * [Live Activity Streams](https://github.com/oaeproject/Hilary/wiki/Live-Activity-Streams) (Push Notifications)
