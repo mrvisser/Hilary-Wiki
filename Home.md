@@ -5,7 +5,7 @@
     * Design
         * [Authz API](https://github.com/oaeproject/Hilary/wiki/Authz-API)
         * [Activity API](https://github.com/oaeproject/Hilary/wiki/Activity-API)
-        * Config API
+        * [Config API](https://github.com/oaeproject/Hilary/wiki/Config-API)
         * Content API
         * Tenants API
 * Proposals
