@@ -3,7 +3,7 @@
     * [Installation](https://github.com/oaeproject/Hilary/blob/master/README.md)
     * [Deployment](https://github.com/oaeproject/Hilary/wiki/Deployment-Documentation) (draft)
     * Design
-        * Authz API
+        * [Authz API](https://github.com/oaeproject/Hilary/wiki/Authz-API)
         * Activity API
         * Config API
         * Content API
