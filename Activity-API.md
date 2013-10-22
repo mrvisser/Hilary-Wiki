@@ -256,7 +256,7 @@ Now that we know why buckets exist, lets talk about how aggregation happens. A m
 
 The in-memory aggregate keys expire after a configurable amount of time (see config.js for more details). Also, "volatile-ttl" expiration should be configured into the Redis server so if you experience an unexpectedly high volume of data, the redis memory foot print will start short-circuiting the expiry of aggregate keys. The impact of short-circuiting the expiration is simply a shorter idle time for activities, not data-loss.
 
-For performance analysis, see [this github issue](https://github.com/sakaiproject/Hilary/pull/35). After performance improvements were made, the result of pushing in 4 batches of data (4000 users, 8000 goups and 20,000 content items), with 3 xsmall activity nodes and one 8Gb Redis server, we had a max throughput of 1500 routed activities per second, and Redis hit an upper memory consumption of 4Gb. The same test with 6 activity nodes was 2500+ routed activities per second, same memory footprint.
+For performance analysis, see [this github issue](https://github.com/sakaiproject/Hilary/pull/351). After performance improvements were made, the result of pushing in 4 batches of data (4000 users, 8000 goups and 20,000 content items), with 3 xsmall activity nodes and one 8Gb Redis server, we had a max throughput of 1500 routed activities per second, and Redis hit an upper memory consumption of 4Gb. The same test with 6 activity nodes was 2500+ routed activities per second, same memory footprint.
 
 # Activity Gloassary
 
