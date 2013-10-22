@@ -116,4 +116,4 @@ Once the pluggable streams are in place, activity could provide a REST endpoint 
 
 Implementation gotchas:
 
-* Currently, the "activity" stream keys currently look like `<routeId>`, whereas "notification" stream keys look like: `<routeId>#notification`. When making this change, we will need to generalize the routes to have key `<routeId>#<streamName>`, which indicates we'll need migration to copy all routes `<routeId>` to `<routeId>#activity`
+* Currently, the "activity" stream keys currently look like `<routeId>`, whereas "notification" stream keys look like: `<routeId>#notification`. When making this change, we will need to generalize the routes to have key `<resourceId>#<stream>`, which indicates we'll need migration to copy all routes `<routeId>` to `<routeId>#activity`. The way we can think of this now is that a route is "an identifier to one of some resource's streams. e.g., Route `c:cam:Foo.docx#message` is the `message` stream for `Foo.docx` and Route `u:cam:branden#activity` is Branden's activity stream
