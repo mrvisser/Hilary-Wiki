@@ -6,7 +6,7 @@
         * [Authz API](https://github.com/oaeproject/Hilary/wiki/Authz-API)
         * [Activity API](https://github.com/oaeproject/Hilary/wiki/Activity-API)
         * [Config API](https://github.com/oaeproject/Hilary/wiki/Config-API)
-        * Content API
+        * [Content API](https://github.com/oaeproject/Hilary/wiki/Content-API)
         * Tenants API
 * Proposals
     * [Live Activity Streams](https://github.com/oaeproject/Hilary/wiki/Live-Activity-Streams) (Push Notifications)
