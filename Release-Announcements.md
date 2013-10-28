@@ -2,7 +2,13 @@
 
 The Apereo Open Academic Environment (OAE) project team is excited to announce the second major release of the Apereo Open Academic Environment; OAE Alicanto or OAE 2.0.
 
-Apereo OAE Alicanto brings a wide range of user-facing improvements like following, video support, Terms and Conditions and many more, as well as a number of usability refinements, internationalization and accessibility improvements.
+Apereo OAE Alicanto brings a wide range of user-facing improvements such as:
+
+- Following
+- Video support
+- Terms and Conditions
+- A number of usability refinements
+- Internationalization and Accessibility improvements
 
 #### Try it out
 
@@ -19,39 +25,39 @@ The repository containing all deployment scripts can be found at https://github.
 
 **Following**
 
-It is now possible to follow other people, allowing for important and public activities from that person to be shown in your personal activity feed. This should provide a way to learn more about the collaboration your peers are involved in, and offers an opportunity for serendipitous discovery of content, discussions, people and groups at the same time.
+It is now possible to follow other people, allowing for important and public activities from that person to be shown in your personal activity feed. This provides a way to learn more about the collaboration in which your peers are involved, and offers an opportunity for serendipitous discovery of content, discussions, people and groups at the same time.
 
-**Video support**
+**Video Support**
 
 An integration with [MediaCore](http://mediacore.com) is now available, allowing for all videos to be uploaded and played inside of OAE. The integration makes it possible for uploaded videos to be transferred to and processed by MediaCore, generating a thumbnail and video that can be played in all browsers. This video is delivered to the OAE user interface through the MediaCore video player.
 
-All of this can be enabled and configured on a tenant by tenant basis through the administration UI.
+The MediaCore video support can be enabled and configured on a tenant-by-tenant basis through the administration UI.
 
 **Terms and Conditions**
 
-A Terms and Conditions agreement can now be configured on a tenant by tenant basis. This agreement will then be presented to all users when they sign in for the first time. The agreement will need to be accepted before they can use the system, including all write APIs.
+A Terms and Conditions agreement feature is now available. If configured, this agreement is presented to all users when they sign in for the first time and they will need to accept it before they can use the system. The terms and conditions can be internationalized in multiple languages at the same time.
 
-The Terms and Conditions agreement can be configured through the administration UI, and can be properly internationalized in multiple languages at the same time.
+The Terms and Conditions agreement can be enabled and configured on a tenant-by-tenant basis through the administration UI.
 
 **My Groups**
 
-The My Groups page now follows the same behaviour as the My library and My discussions pages when being looked at by other people. Only groups that can already be seen by the person looking at your My Groups page will be shown.
+The My Groups page now follows the same behaviour as the My Library and My Discussions pages when being viewed by other people. Only groups that can already be seen by the person viewing your My Groups page will be shown.
 
 **Monitoring**
 
-Integration with Google Analytics is now available out of the box, allowing for a better understanding around usage patterns and total usage to be gained. This can be enabled and configured on a tenant by tenant basis.
+Integration with Google Analytics is now available out of the box, allowing for a better understanding around usage patterns and total usage to be gained. This can be enabled and configured on a tenant-by-tenant basis through the administration UI.
 
 **TinCan API**
 
 OAE is now capable of pushing activities to a Learning Record Store using the [TinCan](http://tincanapi.com) or Experience API. This API is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies, of which OAE is now one.
 
-All of this can be enabled and configured through the administration UI.
+The TinCan API support can be enabled and configured on a tenant-by-tenant basis through the administration UI.
 
 **Internationalization**
 
-The OAE project has decided to adopt [Crowdin](http://crowdin.net/project/apereo-oae) as its official translation platform, allowing for OAE to be translated through the Crowdin web UI,  without needing to set up a local development environment.
+The OAE project has decided to adopt [Crowdin](http://crowdin.net/project/apereo-oae) as its official translation platform. This allows for OAE to be translated through the Crowdin web UI without needing to set up a local development environment.
 
-Next to making it easy to translate all of the OAE keys, it also provides translation suggestions based on a Translation Knowledge Base and machine translations. Crowdin provides a very useful overview of the translation completeness of the different supported languages and makes it easy to see which keys still need to be translated. A synchronisation script has also been set up that will automatically make new keys available to Crowdin and will pull the newest translations into the code base.
+In addition to making it easy to translate all of the OAE keys, it provides translation suggestions based on a Translation Knowledge Base and machine translations. Crowdin provides a very useful overview of the translation completeness of the different supported languages and makes it easy to see which keys still need to be translated. A synchronisation script has also been provided that will automatically make new keys available to Crowdin and will pull the newest translations into the code base.
 
 Through this Crowdin integration, OAE Alicanto includes the following complete translations:
 
@@ -67,11 +73,11 @@ A special thanks goes to Frederic Dooremont, Toni Devís López, Samuel Gutiérr
 
 Finally, OAE will now also automatically detect the preferred language based on the user's browser settings, according to internationalization best practices. We will only default to the language configured in the admin UI if this has not been set.
 
-**CSV user import**
+**CSV User Import**
 
 A tenant can now be pre-populated with a large set of users by uploading a CSV user file. These accounts can be associated with a specific authentication strategy and existing accounts will not be overridden. The CSV upload can be done by a global or a tenant administrator.
 
-**Usability improvements**
+**Usability Improvements**
 
 A long list of usability refinements have been added. Some of the more notable ones are:
 
