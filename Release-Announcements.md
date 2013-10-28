@@ -1,3 +1,96 @@
+### OAE <Albatros> (2.0 - 28 October 2013)
+
+The Apereo Open Academic Environment (OAE) project team is excited to announce the second major release of the Apereo Open Academic Environment; OAE <Albatros> or OAE 2.0.
+
+Apereo OAE Albatros brings a wide range of user-facing improvements like following, video support, Terms and Conditions and many more, as well as a number of usability refinements, internationalization and accessibility improvements.
+
+#### Try it out
+
+The source code has been tagged with version number 2.0.0 and can be downloaded from the following repositories:
+
+Back-end: https://github.com/oaeproject/Hilary/tree/2.0.0  
+Front-end: https://github.com/oaeproject/3akai-ux/tree/2.0.0  
+
+Documentation on how to install the system can be found at https://github.com/oaeproject/Hilary/blob/2.0.0/README.md.
+
+The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
+
+#### Changelog
+
+**Following**
+
+It is now possible to follow other people, allowing for important and public activities from that person to be shown in your personal activity feed. This should provide a way to learn more about the collaboration your peers are involved in, and offers an opportunity for serendipitous discovery of content, discussions, people and groups at the same time.
+
+**Video support**
+
+An integration with [MediaCore](http://mediacore.com) is now available, allowing for all videos to be uploaded and played inside of OAE. The integration makes it possible for uploaded videos to be transferred to and processed by MediaCore, generating a thumbnail and video that can be played in all browsers. This video is delivered to the OAE user interface through the MediaCore video player.
+
+All of this can be enabled and configured on a tenant by tenant basis through the administration UI.
+
+**Terms and Conditions**
+
+A Terms and Conditions agreement can now be configured on a tenant by tenant basis. This agreement will then be presented to all users when they sign in for the first time. The agreement will need to be accepted before they can use the system, including all write APIs.
+
+The Terms and Conditions agreement can be configured through the administration UI, and can be properly internationalized in multiple languages at the same time.
+
+**My Groups**
+
+The My Groups page now follows the same behaviour as the My library and My discussions pages when being looked at by other people. Only groups that can already be seen by the person looking at your My Groups page will be shown.
+
+**Monitoring**
+
+Integration with Google Analytics is now available out of the box, allowing for a better understanding around usage patterns and total usage to be gained. This can be enabled and configured on a tenant by tenant basis.
+
+**TinCan API**
+
+OAE is now capable of pushing activities to a Learning Record Store using the TinCan or Experience API. This API is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies, of which OAE is now one.
+
+All of this can be enabled and configured through the administration UI.
+
+**Internationalization**
+
+The OAE project has decided to adopt [Crowdin](http://crowdin.net/project/apereo-oae) as its official translation platform, allowing for OAE to be translated through the Crowdin web UI,  without needing to set up a local development environment.
+
+Next to making it easy to translate all of the OAE keys, it also provides translation suggestions based on a Translation Knowledge Base and machine translations. Crowdin provides a very useful overview of the translation completeness of the different supported languages and makes it easy to see which keys still need to be translated. A synchronisation script has also been set up that will automatically make new keys available to Crowdin and will pull the newest translations into the code base.
+
+Through this Crowdin integration, OAE <Albatros> includes the following complete translations:
+
+- Catalan
+- Chinese
+- Dutch
+- French
+- German
+- Spanish
+- Valencian
+
+A special thanks goes to Frederic Dooremont, Toni Devís López, Samuel Gutiérrez Jiménez-Peña, Harry Wang, Yildiray Ogurol and Mark Breuker for providing these translations.
+
+Finally, OAE will now also automatically detect the preferred language based on the user's browser settings, according to internationalization best practices. We will only default to the language configured in the admin UI if this has not been set.
+
+**CSV user import**
+
+A tenant can now be pre-populated with a large set of users by uploading a CSV user file. These accounts can be associated with a specific authentication strategy and existing accounts will not be overridden. The CSV upload can be done by a global or a tenant administrator.
+
+**Usability improvements**
+
+A long list of usability refinements have been added. Some of the more notable ones are:
+
+- Improved previews for activity feed items
+- Improved button wording and clarity
+- Automatic link recognition in comments and discussions
+- Keyboard acccessibility improvements (e.g. refocussing modal triggers after modal is closed)
+- etc.
+
+**Automated testing**
+
+A number of improvements have been made to the automated QUnit tests, including making sure that all tests are automatically run after every commit.
+
+
+
+***
+
+
+
 ### OAE Phoenix 1.2 (23 August 2013)
 
 The Apereo Open Academic Environment (OAE) project team is pleased to announce the second minor release of the OAE Phoenix release; OAE Phoenix 1.2. 
@@ -148,7 +241,7 @@ It is now also possible for global and tenant admins to see the group members of
 
 
 
-### OAE Phoenix 1.0 (27 June 2013)
+### OAE Phoenix (1.0 - 27 June 2013)
 
 The Apereo Open Academic Environment (OAE) project team is pleased and excited to announce the first release of the Apereo Open Academic Environment; OAE Phoenix 1.0. This release consists of the first production ready release of Apereo OAE and focusses on providing support for various forms of academic collaboration.
 
