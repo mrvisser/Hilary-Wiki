@@ -43,7 +43,7 @@ Integration with Google Analytics is now available out of the box, allowing for 
 
 **TinCan API**
 
-OAE is now capable of pushing activities to a Learning Record Store using the TinCan or Experience API. This API is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies, of which OAE is now one.
+OAE is now capable of pushing activities to a Learning Record Store using the [TinCan](http://tincanapi.com) or Experience API. This API is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies, of which OAE is now one.
 
 All of this can be enabled and configured through the administration UI.
 
