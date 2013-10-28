@@ -1,8 +1,8 @@
-### OAE <Albatros> (2.0 - 28 October 2013)
+### OAE %Albatros% (2.0 - 28 October 2013)
 
-The Apereo Open Academic Environment (OAE) project team is excited to announce the second major release of the Apereo Open Academic Environment; OAE <Albatros> or OAE 2.0.
+The Apereo Open Academic Environment (OAE) project team is excited to announce the second major release of the Apereo Open Academic Environment; OAE %Albatros% or OAE 2.0.
 
-Apereo OAE Albatros brings a wide range of user-facing improvements like following, video support, Terms and Conditions and many more, as well as a number of usability refinements, internationalization and accessibility improvements.
+Apereo OAE %Albatros% brings a wide range of user-facing improvements like following, video support, Terms and Conditions and many more, as well as a number of usability refinements, internationalization and accessibility improvements.
 
 #### Try it out
 
@@ -53,7 +53,7 @@ The OAE project has decided to adopt [Crowdin](http://crowdin.net/project/apereo
 
 Next to making it easy to translate all of the OAE keys, it also provides translation suggestions based on a Translation Knowledge Base and machine translations. Crowdin provides a very useful overview of the translation completeness of the different supported languages and makes it easy to see which keys still need to be translated. A synchronisation script has also been set up that will automatically make new keys available to Crowdin and will pull the newest translations into the code base.
 
-Through this Crowdin integration, OAE <Albatros> includes the following complete translations:
+Through this Crowdin integration, OAE %Albatros% includes the following complete translations:
 
 - Catalan
 - Chinese
