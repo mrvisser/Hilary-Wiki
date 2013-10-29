@@ -12,6 +12,8 @@ Apereo OAE Alpine Swift brings a wide range of user-facing improvements such as:
 
 #### Try it out
 
+OAE Alpine Swift can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
+
 The source code has been tagged with version number 2.0.0 and can be downloaded from the following repositories:
 
 Back-end: https://github.com/oaeproject/Hilary/tree/2.0.0  
