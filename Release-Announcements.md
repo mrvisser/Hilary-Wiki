@@ -33,7 +33,7 @@ It is now possible to follow other people, allowing for important and public act
 
 An integration with [MediaCore](http://mediacore.com) is now available, allowing for all videos to be uploaded and played inside of OAE. The integration makes it possible for uploaded videos to be transferred to and processed by MediaCore, generating a thumbnail and video that can be played in all browsers. This video is delivered to the OAE user interface through the MediaCore video player.
 
-The MediaCore video support can be enabled and configured on a tenant-by-tenant basis through the administration UI.
+The MediaCore video support can be enabled and configured for all tenants through the global administration UI.
 
 **Terms and Conditions**
 
