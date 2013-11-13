@@ -15,3 +15,38 @@ Additionally, you can provide **document transformer**s for a particular resourc
 The following is a workflow diagram of how general search would work:
 
 [[resources/SearchProcess.png]]
+
+## Indexing
+
+An indexing operation can be triggered by firing an event through the MQ.submit method. The following tasks are handled by the search api:
+
+* `SearchConstants.mq.TASK_INDEX_DOCUMENT`
+* `SearchConstants.mq.TASK_DELETE_DOCUMENT`
+
+The data for an indexing task looks like the following:
+
+```javascript
+MQ.submit(SearchConstants.mq.TASK_INDEX_DOCUMENT, {
+    'resourceType': 'group',
+    'resources': [{
+        'id': groupId,
+        'opts': {
+            'indexResource': true,
+            'indexMembers': false,
+            'indexMemberships': false
+        }
+    }]
+});
+```
+
+In the above example, a group document with the id groupId will be indexed. The following opts tell search worker to do the following:
+
+* **indexResource:** When true, tells the indexer that you want to index the actual group data (e.g., title, name, etc...). In this case, the resource data will be sent to the registered group document producer.
+* **indexMembers:** When true, the worker will update the indexed group members of the group
+* **indexMemberships:** When true, the worker will update the indexed group memberships (e.g., the direct groups to which the provided group is a member)
+
+You can find more examples in the `search.js` component files of the `oae-principals` and `oae-content` modules.
+
+For each resource type, a single document producer can be registered using `SearchAPI.registerDocumentProducer`. This is responsible for taking the task resource data, and producing a set of search documents to be indexed:
+
+[[resources/SearchIndexing.png]]
