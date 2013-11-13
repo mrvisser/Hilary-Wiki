@@ -10,5 +10,6 @@
         * [Content API](https://github.com/oaeproject/Hilary/wiki/Content-API)
         * [Search](https://github.com/oaeproject/Hilary/wiki/Search)
         * [Tenants API](https://github.com/oaeproject/Hilary/wiki/Tenants-API)
+        * [Visibility Matrices](https://github.com/oaeproject/Hilary/wiki/Visibility-Matrices)
 * Proposals
     * [Live Activity Streams](https://github.com/oaeproject/Hilary/wiki/Live-Activity-Streams) (Push Notifications)
