@@ -183,3 +183,17 @@ It's not necessary to pass in a token for a user feed.
 A client can subscribe on multiple feeds in parallel.
 
 The same response mechanisme as with authentication is used here.
+
+## NGINX config
+Add the following to the tenant server
+```
+        location /api/push/ {
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_set_header Host $host;
+            proxy_pass http://tenantworkers;
+            proxy_redirect off;
+            proxy_buffering off;
+        }
+```
