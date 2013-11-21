@@ -112,8 +112,74 @@ Since we simply don't have an `activity` or `notification` router, we are no lon
 
 ## Subscribing to a "Live Stream"
 
-Once the pluggable streams are in place, activity could provide a REST endpoint such as `/api/activity/<streamName>/live` which supports the WebSocket connection to receive all activity that is delivered to the stream.
+The [SockJS](https://github.com/sockjs/sockjs-node) endpoint is exposed at `/api/push`. Only websocket connections should be attempted to be made.
+The websocket is full-duplex, but clients will typically only send `messages` when authenticating/subscribing.
+A `message` is a stringified JSON object which looks something like:
+```javascript
+var msg = {
+    "id": <id>,
+    "name": <authentication|subscribe>,
+    "payload": <payload>
+};
+```
+The properties are:
+ * `id` - A unique string. When the server sends it reply, it will include this ID. This allows the client to connect a reply to a previously sent message
+ * `name` - One of `authentication` or `subscribe`. See below
+ * `payload`- An object that depends on what kind of message is being sent. See below
 
-Implementation gotchas:
+Once the socket has been set up, the very first thing the client should do is try to authenticate themselves. The server will close the socket if anything besides an authentication message gets sent.
 
-* Currently, the "activity" stream keys currently look like `<routeId>`, whereas "notification" stream keys look like: `<routeId>#notification`. When making this change, we will need to generalize the routes to have key `<resourceId>#<stream>`, which indicates we'll need migration to copy all routes `<routeId>` to `<routeId>#activity`. The way we can think of this now is that a route is "an identifier to one of some resource's streams. e.g., Route `c:cam:Foo.docx#message` is the `message` stream for `Foo.docx` and Route `u:cam:branden#activity` is Branden's activity stream
+An authentication message could look like this:
+```javascript
+var msg = {
+    "id": 42,
+    "name": "authentication",
+    "payload": {
+        "userId": oae.data.me.id,
+        "tenantAlias": oae.data.me.tenant.alias,
+        "signature": oae.data.me.signature
+    }
+};
+```
+
+We need to authenticate the client on the socket via a signature as the websocket doesn't support headers/cookies. Once authenticated, the server will send a very basic response back:
+```javascript
+{
+    "id": 42
+}
+```
+In case the authentication failed, the server will send and error response and **close** the socket:
+```javascript
+{
+    "id": 42,
+    "error": {
+        "code": 400,
+        "msg": ".."
+    }
+}
+```
+
+Once authenticated, the client can start subscribing for activities. This can be done by sending the following message:
+```javascript
+{
+    "id": 19,
+    "name": "subscribe",
+    "payload": {
+        "resourceId": <userId | groupId | contentId | discussionId>,
+        "activityStreamId": <activity | notification | message>,
+        "token": { .. }
+    }
+}
+```
+
+Possible activity stream ids:
+ * `activity` - all resources have this
+ * `notification` - only user resources have this
+ * `message` - only content and discussion resources have this (related to new comments)
+
+The token (=signature) can usually be retrieved from the resource's profile endpoint (`/api/group/groupId`, `/api/content/:contentId`, ..)
+It's not necessary to pass in a token for a user feed.
+
+A client can subscribe on multiple feeds in parallel.
+
+The same response mechanisme as with authentication is used here.
