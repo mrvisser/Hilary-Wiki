@@ -1,14 +1,14 @@
-### OAE Bearded Dragon (3.0 - 5 December 2013)
+### OAE Blue Jay (3.0 - 5 December 2013)
 
-The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE Bearded Dragon or OAE 3.0.
+The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE <Blue Jay> or OAE 3.0.
 
-OAE Bearded Dragon introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, providing migration to this new document previewer as part of this release.
+OAE <Blue Jay> introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, and all existing documents can automatically be migrated to this new one.
 
 **High-fidelity previews**
 
-The document previewer available in the OAE Phoenix and Alpine Swift releases was image based, where a set of images of varying sizes would be created for each of the pages in the document. The OAE Bearded Dragon release replaces this with an approach based on the Open Source project [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk), generating high-fidelity HTML for each of the pages.
+The document previewer available in the OAE Phoenix and Alpine Swift releases was image based. This would generate a set of images for the pages in the document. In the OAE <Blue Jay> release, this is replaced with an approach based on the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages.
 
-This brings a wide range of advantages, included significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
+This brings a wide range of advantages, including significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
 
 **Easy to use viewer**
 
@@ -18,11 +18,11 @@ On top of that, this new document previewer is also fully internationalizable an
 
 **Full screen reading**
 
-In order to allow for distraction-less and focussed reading, documents can now be previewed in full screen mode, utilising new HTML5 functionality.
+In order to allow for distraction-less and focussed reading, documents can now be previewed in full screen mode.
 
 **Solid foundation**
 
-This new document previewer is only a first step. This opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
+This new document previewer is only a first step. It opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
 
 #### Try it out
 
