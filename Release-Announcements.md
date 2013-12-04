@@ -4,6 +4,10 @@ The Apereo Open Academic Environment (OAE) project team is pleased to announce t
 
 OAE `Blue Jay` introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, and all existing documents can automatically be migrated to this new one.
 
+Next to this, OAE `Blue Jay` brings a wide range of usability improvements based on usability testing.
+
+#### Document previewer
+
 **High-fidelity previews**
 
 The document previewer available in the OAE Phoenix and Alpine Swift releases was image based. This would generate a set of images for the pages in the document. In the OAE `Blue Jay` release, this is replaced with an approach based on the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages.
