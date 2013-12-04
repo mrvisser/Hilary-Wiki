@@ -1,12 +1,12 @@
 ### OAE Blue Jay (3.0 - 5 December 2013)
 
-The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE <Blue Jay> or OAE 3.0.
+The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE `Blue Jay` or OAE 3.0.
 
-OAE <Blue Jay> introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, and all existing documents can automatically be migrated to this new one.
+OAE `Blue Jay` introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, and all existing documents can automatically be migrated to this new one.
 
 **High-fidelity previews**
 
-The document previewer available in the OAE Phoenix and Alpine Swift releases was image based. This would generate a set of images for the pages in the document. In the OAE <Blue Jay> release, this is replaced with an approach based on the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages.
+The document previewer available in the OAE Phoenix and Alpine Swift releases was image based. This would generate a set of images for the pages in the document. In the OAE `Blue Jay` release, this is replaced with an approach based on the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages.
 
 This brings a wide range of advantages, including significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
 
@@ -26,7 +26,7 @@ This new document previewer is only a first step. It opens up the door to indexi
 
 #### Try it out
 
-OAE Bearded Dragon can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
+OAE `Blue Jay` can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
 
 The source code has been tagged with version number 3.0.0 and can be downloaded from the following repositories:
 
