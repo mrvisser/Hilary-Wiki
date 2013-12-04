@@ -4,23 +4,23 @@ The Apereo Open Academic Environment (OAE) project team is pleased to announce t
 
 OAE Bearded Dragon introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, providing migration to this new document previewer as part of this release.
 
-** High-fidelity previews **
+**High-fidelity previews**
 
 The document previewer available in the OAE Phoenix and Alpine Swift releases was image based, where a set of images of varying sizes would be created for each of the pages in the document. The OAE Bearded Dragon release replaces this with an approach based on the Open Source project [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk), generating high-fidelity HTML for each of the pages.
 
 This brings a wide range of advantages, included significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
 
-** Easy to use viewer **
+**Easy to use viewer**
 
 These new HTML-based previews are displayed in OAE inside of our new simplified document previewer. This allows you to easily flip through pages, request a specific page or zoom in and out of pages.
 
 On top of that, this new document previewer is also fully internationalizable and skinnable.
 
-** Full screen reading **
+**Full screen reading**
 
 In order to allow for distraction-less and focussed reading, documents can now be previewed in full screen mode, utilising new HTML5 functionality.
 
-** Solid foundation **
+**Solid foundation**
 
 This new document previewer is only a first step. This opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
 
