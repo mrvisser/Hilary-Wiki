@@ -1,4 +1,4 @@
-### OAE Blue Jay (3.0 - 5 December 2013)
+### OAE `Blue Jay` (3.0 - 5 December 2013)
 
 The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE `Blue Jay` or OAE 3.0.
 
