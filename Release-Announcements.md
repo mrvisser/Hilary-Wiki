@@ -1,3 +1,48 @@
+### OAE Bearded Dragon (3.0 - 5 December 2013)
+
+The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE Bearded Dragon or OAE 3.0.
+
+OAE Bearded Dragon introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, providing migration to this new document previewer as part of this release.
+
+** High-fidelity previews **
+
+The document previewer available in the OAE Phoenix and Alpine Swift releases was image based, where a set of images of varying sizes would be created for each of the pages in the document. The OAE Bearded Dragon release replaces this with an approach based on the Open Source project [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk), generating high-fidelity HTML for each of the pages.
+
+This brings a wide range of advantages, included significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
+
+** Easy to use viewer **
+
+These new HTML-based previews are displayed in OAE inside of our new simplified document previewer. This allows you to easily flip through pages, request a specific page or zoom in and out of pages.
+
+On top of that, this new document previewer is also fully internationalizable and skinnable.
+
+** Full screen reading **
+
+In order to allow for distraction-less and focussed reading, documents can now be previewed in full screen mode, utilising new HTML5 functionality.
+
+** Solid foundation **
+
+This new document previewer is only a first step. This opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
+
+#### Try it out
+
+OAE Bearded Dragon can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
+
+The source code has been tagged with version number 3.0.0 and can be downloaded from the following repositories:
+
+Back-end: https://github.com/oaeproject/Hilary/tree/3.0.0  
+Front-end: https://github.com/oaeproject/3akai-ux/tree/3.0.0  
+
+Documentation on how to install the system can be found at https://github.com/oaeproject/Hilary/blob/3.0.0/README.md.
+
+The repository containing all deployment scripts can be found at https://github.com/oaeproject/puppet-hilary.
+
+
+
+***
+
+
+
 ### OAE Alpine Swift (2.0 - 28 October 2013)
 
 The Apereo Open Academic Environment (OAE) project team is excited to announce the second major release of the Apereo Open Academic Environment; OAE Alpine Swift or OAE 2.0.
