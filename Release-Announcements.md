@@ -1,36 +1,45 @@
-### OAE `Blue Jay` (3.0 - 5 December 2013)
+### OAE Blue Jay (3.0 - 5 December 2013)
 
 The Apereo Open Academic Environment (OAE) project team is pleased to announce the third major release of the Apereo Open Academic Environment; OAE `Blue Jay` or OAE 3.0.
 
-OAE `Blue Jay` introduces a new and improved document previewer, allowing PDF, Text, Word and Excel files to be displayed and embedded within OAE without having to download these files. This replaces the previous document previewer, and all existing documents can automatically be migrated to this new one.
+OAE Blue Jay introduces a new and improved Document Previewer that allows rich documents such as PDFs, Microsoft Word and Excel files to be displayed and embedded directly within the browser without requiring a download. OAE Blue Jay also provides enhanced preview re-processing functionality that allows all existing documents to be automatically migrated to the enhanced version.
 
-Next to this, OAE `Blue Jay` brings a wide range of usability improvements based on usability testing.
+In addition to enhanced preview processing, OAE Blue Jay brings a wide range of usability improvements based on usability testing.
 
-#### Document previewer
+#### Document Previewer
 
 **High-fidelity previews**
 
-The document previewer available in the OAE Phoenix and Alpine Swift releases was image based. This would generate a set of images for the pages in the document. In the OAE `Blue Jay` release, this is replaced with an approach based on the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages.
+Prior to OAE Blue Jay, the Document Previewer processed rich documents in such a way that the preview artifacts were images. While it produced picture-perfect previews, it had some drawbacks:
 
-This brings a wide range of advantages, including significantly improved accessibility around browsing and reading a document, native zooming, searching, etc.
+* Generating image-based previews takes significantly longer
+* Image-based previews are large in file-size, degrading the document browsing experience
+* Image-based previews degrade in quality as zoom level increases
+
+In the OAE Blue Jay release, we have replaced the image-based processor with the [pdf2htmlEX](http://pdf2htmlex.blogspot.co.uk) Open Source project, generating high-fidelity HTML for each of the pages. This enhances previews in the following ways:
+
+* Generating previews on large documents is orders of magnitude faster
+* Documents that are mostly text are significantly smaller in file-size
+* Zooming of text can be achieved natively in the browser without loss of preview quality
+* Since the raw text is available in HTML, it makes way for additional accessibility improvements
 
 **Easy to use viewer**
 
-These new HTML-based previews are displayed in OAE inside of our new simplified document previewer. This allows you to easily flip through pages, request a specific page or zoom in and out of pages.
+These new HTML-based previews are displayed in OAE inside of our new simplified Document Previewer. This allows you to easily flip through pages, request a specific page or zoom in and out of pages.
 
-On top of that, this new document previewer is also fully internationalizable and skinnable.
+On top of that, this new Document Previewer is also fully internationalizable and skinnable.
 
 **Full screen reading**
 
-In order to allow for distraction-less and focussed reading, documents can now be previewed in full screen mode.
+Users can now enjoy reading documents without distraction by using the full-screen mode feature available in the new Document Previewer.
 
 **Solid foundation**
 
-This new document previewer is only a first step. It opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
+This new Document Previewer is only a first step. It opens up the door to indexing and searching the full text of these documents, as well as allowing for annotations to be made inside of documents.
 
 #### Try it out
 
-OAE `Blue Jay` can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
+OAE Blue Jay can be experienced on the project's QA server at http://oae.oae-qa0.oaeproject.org. It is worth noting that this server is actively used for testing and will be wiped and redeployed every night.
 
 The source code has been tagged with version number 3.0.0 and can be downloaded from the following repositories:
 
